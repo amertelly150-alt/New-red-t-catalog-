@@ -1,0 +1,13 @@
+{
+  "buildCommand": "pnpm --filter @workspace/red-t-catalog build",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "outputDirectory": "artifacts/red-t-catalog/dist/public",
+  "framework": "vite",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
